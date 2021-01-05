@@ -6,6 +6,7 @@
   },
   "main": "./build/ganache-core.node.cli.js",
   "scripts": {
+    "prepare": "npm run build",
     "start": "node cli.js",
     "build": "webpack-cli --config ./webpack/webpack.node.config.js",
     "docker": "docker build -t trufflesuite/ganache-cli . && docker run -p 8545:8545 trufflesuite/ganache-cli",
@@ -24,7 +25,7 @@
   ],
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
-    "ganache-core": "2.13.1",
+    "ganache-core": "github:thundercore/ganache-core#v2.13.1-tt",
     "node-loader": "^0.6.0",
     "notp": "2.0.3",
     "on-build-webpack": "^0.1.0",

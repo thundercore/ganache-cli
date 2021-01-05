@@ -70,8 +70,8 @@ module.exports = exports = function(yargs, version, isDocker) {
       group: 'Chain:',
       alias: 'hardfork',
       type: 'string',
-      describe: "Allows users to specify which hardfork should be used. Supported hardforks are `byzantium`, `constantinople`, `petersburg`, `istanbul` and `muirGlacier` (default).",
-      default: "muirGlacier"
+      describe: "Allows users to specify which hardfork should be used. Supported hardforks are `byzantium`, `constantinople`, `petersburg`, `istanbul`, `muirGlacier` and `pala` (default).",
+      default: "pala"
     })
     .option('f', {
       group: 'Chain:',
